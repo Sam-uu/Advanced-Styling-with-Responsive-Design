@@ -44,7 +44,7 @@ div{
 
 @media only screen and (min-width: 772px) and (max-width: 997px) {
     div {
-        width: 45%;
+        width: 45vw;
     }
 
     div img {
