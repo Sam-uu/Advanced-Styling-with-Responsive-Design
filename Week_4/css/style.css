@@ -1,0 +1,92 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+img{
+    border: 5px solid rgb(193, 192, 163);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 97%;
+    height: 8em;
+}
+
+figure{
+    border-radius: 10px;
+    background-color: rgb(193, 192, 163);
+    text-align: center;
+}
+
+@media screen and (min-width: 772px) and (max-width: 991px){
+    img{
+        border-radius: 50%;
+        height: 10em;
+    }
+    figure{
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 772px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    
+
+    figure:last-child{
+        grid-column: span 2;
+    }
+}
+  
+@media screen and (min-width: 992px){
+    img{
+        width: 97%;
+        border-radius: 0;
+    }
+    figure:nth-child(3n){
+        grid-column: span 2;
+    }
+    figure:nth-child(3n) img{
+        width: 98%;
+    }
+    figure{
+        border-radius: 0;
+    }
+}
+  
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+}
+  
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: rgb(120, 110, 110);
+    }
+    figure{
+        background-color: #000;
+        color: #ffeb3b;
+        border-color: #000;
+    }
+    img{
+        border: 5px solid black;
+    }
+}
+  
