@@ -88,5 +88,8 @@ figure{
     img{
         border: 5px solid black;
     }
+    a{
+        color: #ffeb3b;
+    }
 }
   
